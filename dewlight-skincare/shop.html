@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop | Dewlight</title><meta name="description" content="Shop face creams, serums, cleansers, sunscreen, eye care and body care."><meta name="theme-color" content="#f7f2ea">
+<meta property="og:title" content="Shop | Dewlight"><meta property="og:description" content="Shop face creams, serums, cleansers, sunscreen, eye care and body care."><meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css">
+<script>document.documentElement.className+=' js'</script></head>
+<body class="inner-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap head-in">
+  <a class="logo" href="index.html" aria-label="Dewlight home"><svg viewBox="0 0 22 28" aria-hidden="true"><path d="M11 0C11 0 1 11.5 1 18a10 10 0 0 0 20 0C21 11.5 11 0 11 0Z"/></svg>Dewlight</a>
+  <nav class="nav" id="site-nav" aria-label="Main">
+    <a href="shop.html" aria-current="page">Shop</a><a href="routine.html">Routine finder</a><a href="ingredients.html">Ingredients</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </nav>
+  <div class="head-right"><button class="bag-btn" type="button" data-open-bag aria-label="Open bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8ZM9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="n" data-bag-count>0</span></button>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span></button></div>
+</div></header>
+<main id="main" class="inner">
+<div class="wrap page-head"><h1 id="st">Shop skincare</h1><p>Filter by product type, concern or skin type. Every product page lists key ingredients and how to use it.</p></div>
+<div class="wrap">
+  <form class="filters" id="f" onsubmit="return false">
+    <label class="field"><span>Product</span><select name="cat"><option value="">All products</option></select></label>
+    <label class="field"><span>Concern</span><select name="concern"><option value="">Any concern</option></select></label>
+    <label class="field"><span>Skin type</span><select name="skin"><option value="">Any skin type</option><option value="dry">Dry</option><option value="oily">Oily</option><option value="combo">Combination</option><option value="normal">Normal</option><option value="sensitive">Sensitive</option></select></label>
+    <label class="field"><span>Sort</span><select name="sort"><option value="">Featured</option><option value="low">Price, low to high</option><option value="high">Price, high to low</option></select></label>
+  </form>
+  <div class="chips" id="chips"></div>
+  <p class="count-line"><span id="count">0</span> products</p>
+  <div class="grid" id="results" style="padding-bottom:5rem"></div>
+</div></main>
+<footer class="site-footer"><div class="wrap">
+  <div class="foot">
+    <div><a class="logo" href="index.html"><svg viewBox="0 0 22 28" aria-hidden="true"><path d="M11 0C11 0 1 11.5 1 18a10 10 0 0 0 20 0C21 11.5 11 0 11 0Z"/></svg>Dewlight</a><p>Simple, skin-first care made for everyday life in warm climates. Order on WhatsApp and we deliver across Nigeria.</p></div>
+    <div><h4>Shop</h4><ul><li><a href="shop.html?cat=cream">Face creams</a></li><li><a href="shop.html?cat=serum">Serums</a></li><li><a href="shop.html?cat=cleanser">Cleansers</a></li><li><a href="shop.html?cat=sunscreen">Sunscreen</a></li></ul></div>
+    <div><h4>Help</h4><ul><li><a href="routine.html">Routine finder</a></li><li><a href="ingredients.html">Ingredients</a></li><li><a href="about.html#faq">Questions</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Talk to us</h4><ul><li><a href="tel:+2347014345122">Call 0701 434 5122</a></li><li><a data-wa="Hello Dewlight, I need help choosing skincare." href="#">WhatsApp 0701 434 5122</a></li></ul></div>
+  </div>
+  <div class="legal"><span>&copy; <span id="year">2026</span> Dewlight. All rights reserved.</span><span>Cosmetic products. Not intended to diagnose or treat any condition.</span></div>
+</div></footer>
+<a class="wa-float" data-wa="Hello Dewlight, I need help choosing skincare." href="#" aria-label="Chat with us on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.27-1.38A9.93 9.93 0 1 0 12.04 2Zm0 18.1a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.13.82.84-3.05-.2-.31a8.1 8.1 0 1 1 6.92 3.85Zm4.45-6.06c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06a6.6 6.6 0 0 1-1.94-1.2 7.3 7.3 0 0 1-1.34-1.67c-.14-.24-.01-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28Z"/></svg></a>
+<div class="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Shopping bag">
+  <div class="d-head"><h2>Your bag</h2><button class="d-close" type="button" aria-label="Close bag">&times;</button></div>
+  <div class="d-body" id="d-body"></div>
+  <div class="d-foot" id="d-foot" hidden><div class="tot"><span>Total</span><span id="d-total"></span></div><p>Delivery is confirmed on WhatsApp. You pay after we agree the address and delivery fee.</p>
+  <a class="btn btn--wa btn--block" id="d-order" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.27-1.38A9.93 9.93 0 1 0 12.04 2Zm0 18.1a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.13.82.84-3.05-.2-.31a8.1 8.1 0 1 1 6.92 3.85Zm4.45-6.06c-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06a6.6 6.6 0 0 1-1.94-1.2 7.3 7.3 0 0 1-1.34-1.67c-.14-.24-.01-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28Z"/></svg>Order on WhatsApp</a></div>
+</aside>
+<div class="toast" id="toast" role="status"></div><div class="sr" id="live" aria-live="polite"></div>
+<script src="js/data.js"></script><script src="js/main.js"></script><script src="js/shop.js"></script>
+</body></html>
